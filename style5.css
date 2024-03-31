@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.quiz{
+    margin: 0 auto;
+    width: 600px;
+    
+}
+.quiz.contact-dec {
+    position: absolute;
+    right: -166px;
+    bottom: 100;
+}
+  
+.quiz.contact-dec img {
+    max-width: 178px;
+}
+
+.quiz-questions,
+.quiz-indicator,
+.quiz-results{
+    margin-bottom: 20px;
+}
+
+.quiz-questions-item,
+.quiz-results-item{
+    margin-bottom: 20px;
+    &__question{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    &__answers{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+}
+
+.quiz-indicator{}
+
+.quiz-results{
+    display: none;
+}
+
+.btn-next{}
+
+.btn-restart{
+    display: none;
+}
+
+.questions--hidden,
+.indicator--hidden,
+.btn-next--hidden{
+    display: none;
+}
+
+
+.results--visible,
+.btn-restart--visible{
+    display: block;
+}
+
+.answer--invalid{
+    color:red;
+}
+.answer--valid{
+    color:green;
+}
+
+.test{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 0px 0px 20px 0px;
+  position: relative;
+  overflow: hidden;
+  content: '';
+    background-image: url(./assets/images/contact-bg.png);
+    background-repeat: no-repeat;
+}
+
+.test-h2{
+    font-size: 20px;
+  font-weight: 700;
+  color: white;
+  line-height: 23px;
+  text-align: center;
+}
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: #fff;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

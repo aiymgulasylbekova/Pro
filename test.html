@@ -2,39 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Деңгей анықтау тесті</title>
+    <link rel="stylesheet" href="./style5.css" />
 </head>
 <body>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-    onload="if(submitted) {window.location='C:/Users/Asus/Desktop/дп/Pro/KEMEL/Confirmation.html';}"></iframe>
-    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeLtnma7zrpQXXQvIRkzJGYhd1h5BMxvJ-CFSYBRsX8WuGO7A/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" >
-        Первый вопрос: <br>
-        <label for="1 ответ">
-            <input type="radio" id="1 ответ" name="entry.1119171419_sentinel" required value="1 ответ">
-            <span></span>1 ответ
-        </label>
-        <label for="2 ответ">
-            <input type="radio" id="2 ответ" name="entry.1119171419_sentinel" required value="2 ответ">
-            <span></span>2 ответ
-        </label>
-        <label for="3 ответ">
-            <input type="radio" id="3 ответ" name="entry.1119171419_sentinel" required value="3 ответ">
-            <span></span>3 ответ
-        </label>
-        Второй вопрос: <br>
-        <label for="1 ответ">
-            <input type="radio" id="1 ответ" name="entry.1815583809_sentinel" required value="1 ответ">
-            <span></span>1 ответ
-        </label>
-        <label for="2 ответ">
-            <input type="radio" id="2 ответ" name="entry.1815583809_sentinel" required value="2 ответ">
-            <span></span>2 ответ
-        </label>
-        <label for="3 ответ">
-            <input type="radio" id="3 ответ" name="entry.1815583809_sentinel" required value="3 ответ">
-            <span></span>3 ответ
-        </label>
-        <button type="submit">Отправить</button>
-    </form>
+    <div class="test" data-wow-duration="1s" data-wow-delay="0.5s">
+        <div class="test-h2"><h2>Деңгей анықтау тесті</h2></div>
+        
+    </div>
+    <div class="quiz" id="quiz">
+        <div class="quiz-questions" id="questions"></div>
+        <div class="quiz-indicator" id="indicator">1/10</div>
+        <div class="contact-dec">
+            <img align="right" src="assets/images/contact-decoration.png" alt="">
+        </div>
+        <div class="quiz-results" id="results">
+            <div class="quiz-results-item">
+                <div class="quiz-results-item_question">Вопрос 1</div>
+                <ul class="quiz-results-item_answers">
+                    <li>Ответ 1</li>
+                    <li>Ответ 2</li>
+                </ul>
+                </div>
+        </div>
+
+        <div class="quiz-controls">
+            <button class="btn-next" id="btn-next" disabled>Далее</button>
+            <button class="btn-restart" id="btn-restart">С начала</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
